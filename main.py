@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from datetime import datetime, timedelta
 
 
+@st.cache
 def fetch_coin_price(coingecko_token_id):
     return [
         (datetime.fromtimestamp(int(str(timestamp)[:-3])), price)
@@ -35,4 +36,8 @@ gst_sol_price_df = pd.DataFrame(gst_sol_prices, index=None, columns=["date", "pr
 
 fig = go.Figure([go.Scatter(x=gst_sol_price_df.date, y=gst_sol_price_df.price)])
 
+st.write("""
+# GST - SOL
+a simple web application that shows the rate of green-satoshi-token in solana using coingecko api
+""")
 st.write(fig)
