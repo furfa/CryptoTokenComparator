@@ -64,7 +64,7 @@ def build_controls() -> Tuple[List[str], str]:
 
 
 def build_main_layout(
-    tokens: list[str],
+    tokens: List[str],
     current_prices: List[Tuple[datetime, float]],
     main_currency: str,
     figure: go.Figure,
