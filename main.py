@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, Dict
+from typing import Any, Dict, Tuple, List
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -40,7 +40,7 @@ def fetch_coin_price(coingecko_token_id: str):
     ]
 
 
-def build_controls() -> tuple[list[str], str]:
+def build_controls() -> Tuple[List[str], str]:
     """
     Left side bar
     """
@@ -65,7 +65,7 @@ def build_controls() -> tuple[list[str], str]:
 
 def build_main_layout(
     tokens: list[str],
-    current_prices: list[tuple[datetime, float]],
+    current_prices: List[Tuple[datetime, float]],
     main_currency: str,
     figure: go.Figure,
 ):
