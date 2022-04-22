@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any
+from typing import Any, Dict
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -16,7 +16,7 @@ CURRENCY_NAMES = {
 }
 
 
-def get_key_by_val(d: dict[Any, Any], val: Any):
+def get_key_by_val(d: Dict[Any, Any], val: Any):
     """
     Get dict key by value
     """
