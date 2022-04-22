@@ -6,9 +6,7 @@ import plotly.graph_objects as go
 import requests
 import streamlit as st
 
-"""
-Frontend names to coingecko api coin names
-"""
+
 TOKEN_NAMES = {"GST": "green-satoshi-token", "GMT": "stepn", "SOL": "solana"}
 CURRENCY_NAMES = {
     "SOL": "solana",
