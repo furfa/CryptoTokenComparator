@@ -74,18 +74,21 @@ def build_main_layout(
         # initial screen
         st.write(
             """
-        # 👋 Hello
+        # 👋 Hi, this is SterN comparator.
         """
         )
         st.write(
-            """ 
-        This application will help you compare StepN NFT tokens and more intelligently choose the time to sell and buy them.
-        Interested?"""
+            """
+        I will help you compare tokens. This will help you choose a more reasonable time to sell and buy them.
+        """
         )
+        st.write("""
+        Interested ?
+        """)
 
         st.write(
             """ 
-        👈 Follow the instructions in the side menu.
+        **👈 Follow the instructions in the side menu.**
         """
         )
         return
